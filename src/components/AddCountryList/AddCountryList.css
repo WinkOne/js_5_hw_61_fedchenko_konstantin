@@ -1,0 +1,26 @@
+.box{
+    border: 2px solid black;
+    margin: 25px;
+    padding: 15px;
+    max-height: 700px;
+    overflow: scroll;
+}
+.box li{
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+.box li{
+    border: 1px solid black;
+}
+.box li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+.box li:hover{
+    background: #999999;
+    padding: 10px;
+    font-size: 18px;
+}
