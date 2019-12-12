@@ -2,10 +2,46 @@
     display: flex;
 }
 .boxInformation{
-    width: 25%;
+    text-align: center;
+    width: 40%;
     min-height: 650px;
     border: 2px solid black;
     margin: 25px;
     padding: 15px;
     background: #c5c5c5;
+    position: relative;
+}
+.boxInformation h1{
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.boxInformation ul li{
+    list-style: none;
+    margin: 10px;
+}
+.boxInformation ul{
+    background: #91919191;
+    padding: 10px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 0;
+}
+.boxInformation ul span{
+    border-bottom: 2px solid black;
+    width: 300px;
+}
+.item{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding: 10px;
+}
+.item p{
+    margin: 0;
+}
+.item:first-child{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
 }

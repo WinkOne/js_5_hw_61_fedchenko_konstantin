@@ -5,21 +5,22 @@ const CountryInfo = props => {
      return (
                 <Fragment>
                     <div className='blockCount'>
-                        <div><h1>{props.name}</h1></div>
                         <div><img className='countInfoImg' src={props.flag} alt=""/></div>
-                        <div><p>Population: {props.population}</p></div>
-                        <div><p>Region: {props.region}</p></div>
-                        <div><p>Code: {props.alpha3Code}</p></div>
-                        <div><p>Subregion: {props.subregion}</p></div>
+                        <div className='informationBlock'>
+                        <div className='item'><h1>{props.name}</h1></div>
+                        <div className='item'><p><b>Population:</b> {props.population}</p></div>
+                        <div className='item'><p><b>Region:</b> {props.region}</p></div>
+                        <div className='item'><p><b>Code:</b> {props.alpha3Code}</p></div>
+                        <div className='item'><p><b>Subregion:</b> {props.subregion}</p></div>
                         <div>
-                            <ul>Borders:
+                            <ul><span><b>Borders</b></span>
                                 {props.borders.map((country, index) => {
                                     return (
                                         <li key={index}>{country.name}</li>
                                     )
                                 })}
                             </ul></div>
-
+                        </div>
                     </div>
 
 
